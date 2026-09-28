@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mobile Shop Center | Tuludimtu, Addis Ababa</title>
+  <meta name="description" content="Phones, accessories and repairs in Tuludimtu, Addis Ababa. Call +251931838883.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="bar">
+      <a class="logo" href="#top">Mobile Shop <span>Center</span></a>
+      <nav aria-label="Main">
+        <a href="#products">Phones</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="call" href="tel:+251931838883">Call +251 93 183 8883</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div class="wrap">
+        <div>
+          <h1>Phones, accessories and repairs in Tuludimtu.</h1>
+          <p>Buy a new or used phone, get your screen fixed, or pick up a charger and case. Visit us in Addis Ababa or
+            call to check what is in stock.</p>
+          <div class="btns">
+            <a class="btn primary" href="#products">See phones</a>
+            <a class="btn ghost" href="tel:+251931838883">Call the shop</a>
+          </div>
+        </div>
+        <div class="phone" aria-hidden="true"><i></i>
+          <div class="screen"><b>Mobile<br>Shop<br>Center</b></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="products">
+      <div class="wrap">
+        <h2>What we sell</h2>
+        <p class="sub">Pick a category. Tap "Ask about this" to call us for today's price and stock.</p>
+        <div class="filters" id="filters" role="group" aria-label="Filter products"></div>
+        <div class="grid" id="grid" aria-live="polite"></div>
+        <p class="note">Items and prices shown are samples. Call to confirm the current price in birr.</p>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="wrap">
+        <h2>Services</h2>
+        <p class="sub">Most repairs are done while you wait.</p>
+        <div class="svc">
+          <div>
+            <h3>Screen replacement</h3>
+            <p>Cracked or dead screens on most Android phones and iPhones.</p>
+          </div>
+          <div>
+            <h3>Battery and charging port</h3>
+            <p>Phone dies fast or will not charge? We test and replace.</p>
+          </div>
+          <div>
+            <h3>Software and unlocking</h3>
+            <p>Updates, resets, and data transfer to a new phone.</p>
+          </div>
+          <div>
+            <h3>Accessories</h3>
+            <p>Cases, screen protectors, chargers, earphones and power banks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap contact">
+        <div class="info">
+          <h2>Visit or call us</h2>
+          <p class="sub">Send a message and we will call you back.</p>
+          <p><strong>Address</strong>Tuludimtu, Addis Ababa, Ethiopia</p>
+          <p><strong>Phone</strong><a href="tel:+251931838883">+251 93 183 8883</a></p>
+          <p><a class="btn primary" target="_blank" rel="noopener"
+              href="https://www.google.com/maps/search/?api=1&query=Tuludimtu%2C+Addis+Ababa">Open in Google Maps</a>
+          </p>
+        </div>
+        <form id="form" novalidate>
+          <label>Your name<input id="name" autocomplete="name" required></label>
+          <label>Phone number<input id="tel" type="tel" autocomplete="tel" placeholder="+251..." required></label>
+          <label>I need
+            <select id="need">
+              <option>Buy a phone</option>
+              <option>Repair</option>
+              <option>Accessories</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>Message<textarea id="text"></textarea></label>
+          <button class="btn primary" type="submit">Send message</button>
+          <div class="msg" id="msg" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year"></span> Mobile Shop Center · Tuludimtu, Addis Ababa · <a
+        href="tel:+251931838883">+251931838883</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
